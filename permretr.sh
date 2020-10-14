@@ -43,7 +43,7 @@ fi
 
 # Change file pemissions from config file
 grep -v '^#' "${CONFIG_FILE}" | \
-while IFS=';' read -r s_owner s_group s_perm s_file
+while IFS='; ' read -r s_owner s_group s_perm s_file
 do
     FILENAME="${BASE_DIR}/${s_file#/*}"
 
