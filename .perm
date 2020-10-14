@@ -1,0 +1,16 @@
+# Sample permission definition file
+# 
+# line format:
+#   owner;group;permission;filename;
+#
+# fields:
+#   owner     : owner user of a file (username or uid)
+#   group     : owner group of a file (groupname or gid)
+#   permision : file permission (octal value
+#   filename  : file name (relative path from directory that contains this file)
+#
+# Each column separated with semi-colon ';'.
+# If line is start with hashtag '#', handled as comment line.
+#
+root;root;0644;path/to/hoge.cfg;
+root;root;0544;permretr.sh;
